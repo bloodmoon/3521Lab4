@@ -32,7 +32,7 @@ class MDP:
         if self.is_terminal(state):
             # TODO : PROB  SHOULD JUST RETURN ZERO TO MAKE UNCHANGED
             tuplist = list()
-            tuplist.append(tuple((self.get_reward(state), 1.0)))
+            tuplist.append(tuple((0, 0)))
             return tuplist
         else:
             return self.transition_matrix[state][action]
