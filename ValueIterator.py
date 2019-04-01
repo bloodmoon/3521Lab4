@@ -21,7 +21,7 @@ def value_iteration(mdp_in, epsilon):
                 for probability in mdp_in.get_state_transition_prob_list(state, a):
                     res_state = probability[0]
                     if res_state is not 0:
-                        curr_sum = curr_sum + (probability[1] * adjusted_util[probability[0]])
+                        curr_sum = curr_sum + (probability[1] * adjusted_util[res_state])
 
                 # Add to sum list for finding max and store resultant state for finding policy
                 action_sum_list.append(tuple((curr_sum, a)))
