@@ -50,5 +50,11 @@ eps = float(input("Please enter an epsilon value that you would like to use: "))
 mdp = MDP(state_file, transition_file)
 utility = value_iteration(mdp, eps)
 
+# Heading
+print("===================")
+print("=     Results     =")
+print("===================")
+
+# Output data to stdout
 for s in utility:
     print("State", s, ":", " Utility:", utility[s], "  Policy: ", mdp.get_policy(s))
