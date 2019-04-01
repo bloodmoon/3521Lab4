@@ -4,6 +4,8 @@
       <w>conv</w>
       <w>dest</w>
       <w>probs</w>
+      <w>qval</w>
+      <w>qvalue</w>
       <w>tuplist</w>
     </words>
   </dictionary>
